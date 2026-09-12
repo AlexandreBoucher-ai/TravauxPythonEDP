@@ -1,6 +1,42 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Semaine 2
+
+# Question 1
+# Tracer dans une même figure les 3 premiers polynôme de Legendre-Fournier dans un même graphique
+# Pour x entre -1 et 1
+
+# Nombre de pas (arbitraire)
+N = 100
+
+# Intervalle
+x = np.linspace(-1, 1, N+1)
+
+# P_0
+P_0 = np.ones(N+1)
+
+# P_1
+P_1 = np.zeros(N+1)
+for i in range(0, N+1):
+    P_1[i] = x[i]
+
+# P_2
+P_2 = np.zeros(N+1)
+for i in range(0, N+1):
+    P_2[i] = 1/2 * (3*x[i]**2 - 1)
+
+
+plt.figure()
+plt.plot(x, P_0)
+plt.plot(x, P_1)
+plt.plot(x, P_2)
+
+# Correct!
+
+
+# Semaine 1
+
 # Question 1
 # Sachant la solution y(x), tracer y(x)
 # y(x) = 3e^-2x + 2xe^-2
