@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
 
-# Module 3:
+# Module 6:
 # Question 1: Variation en x: (valeur de t constante)
 
 # 1. Valeurs imposés:
